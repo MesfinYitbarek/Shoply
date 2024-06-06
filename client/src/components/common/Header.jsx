@@ -7,7 +7,8 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import LocalMallIcon from '@mui/icons-material/LocalMall';
-import { Link, Search, SearchOff, SearchRounded } from "@mui/icons-material";
+import { SearchRounded } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className=" shadow-md ">
@@ -33,7 +34,9 @@ const Header = () => {
         </div>
       </div>
       <div className=" px-28 p-3 flex justify-between items-center">
+        <Link to={"/"}>
         <h1 className=" font-bold text-2xl"> <LocalMallIcon sx={{ fontSize: 50 }} className=" text-blue-900 "/> SHOPLY</h1>
+        </Link>
         <div className=" flex items-center">
           <input
             type="text"
